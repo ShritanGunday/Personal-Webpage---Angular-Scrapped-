@@ -1,0 +1,13 @@
+<app-nav-bar></app-nav-bar>
+<h2>My Courses</h2>
+<ul class="coursework">
+  <li *ngFor="let course of courses">
+    <button [class.selected]="course === selectedCourse" type="button" (click)="onSelect(course)">
+      <span class="badge">{{course.dept}}</span>
+      <span class="name">{{course.num}}</span>
+    </button>
+  </li>
+  <div *ngIf="selectedCourse">
+    <h2>{{selectedCourse.dept | uppercase}} {{selectedCourse.num}} Details</h2>
+  </div>
+</ul>
