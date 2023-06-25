@@ -1,13 +1,85 @@
-<app-nav-bar></app-nav-bar>
-<h2>My Courses</h2>
-<ul class="coursework">
-  <li *ngFor="let course of courses">
-    <button [class.selected]="course === selectedCourse" type="button" (click)="onSelect(course)">
-      <span class="badge">{{course.dept}}</span>
-      <span class="name">{{course.num}}</span>
-    </button>
-  </li>
-  <div *ngIf="selectedCourse">
-    <h2>{{selectedCourse.dept | uppercase}} {{selectedCourse.num}} Details</h2>
+<div class="backdrop">
+  <div class="_2021">
+    <ul class = "SP">
+      <h1>SPRING 2021</h1>
+      <li *ngFor="let course of courses">
+        <button *ngIf="course.year == 2021 && course.term == 'SP'" [class.selected]="course === selectedCourse" type="button" (click)="onSelect(course)">
+          <span>{{course.dept}} {{course.num}}</span>
+        </button>
+      </li>
+    </ul>
+    <ul class = "SU">
+      <h1>SUMMER 2021</h1>
+      <li *ngFor="let course of courses">
+        <button *ngIf="course.year == 2021 && course.term == 'SU'" [class.selected]="course === selectedCourse" type="button" (click)="onSelect(course)">
+          <span>{{course.dept}} {{course.num}}</span>
+        </button>
+      </li>
+    </ul>
+    <ul class = "AU">
+      <h1>AUTUMN 2021</h1>
+      <li *ngFor="let course of courses">
+        <button *ngIf="course.year == 2021 && course.term == 'AU'" [class.selected]="course === selectedCourse" type="button" (click)="onSelect(course)">
+          <span>{{course.dept}} {{course.num}}</span>
+        </button>
+      </li>
+    </ul>
   </div>
-</ul>
+  <div class="_2022">
+    <ul class="SP">
+      <h1>SPRING 2022</h1>
+      <li *ngFor="let course of courses" >
+        <button *ngIf="course.year == 2022 && course.term == 'SP'" [class.selected]="course === selectedCourse" type="button" (click)="onSelect(course)">
+          <span>{{course.dept}} {{course.num}}</span>
+        </button>
+      </li>
+    </ul>
+    <ul class="SU">
+      <h1>SUMMER 2022</h1>
+      <li *ngFor="let course of courses" >
+        <button *ngIf="course.year == 2022 && course.term == 'SU'" [class.selected]="course === selectedCourse" type="button" (click)="onSelect(course)">
+          <span>{{course.dept}} {{course.num}}</span>
+        </button>
+      </li>
+    </ul>
+    <ul class="AU">
+      <h1>AUTUMN 2022</h1>
+      <li *ngFor="let course of courses" >
+        <button *ngIf="course.year == 2022 && course.term == 'AU'" [class.selected]="course === selectedCourse" type="button" (click)="onSelect(course)">
+          <span>{{course.dept}} {{course.num}}</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="_2023">
+    <ul class="SP">
+      <h1>SPRING 2023</h1>
+      <li *ngFor="let course of courses" >
+        <button *ngIf="course.year == 2023 && course.term == 'SP'" [class.selected]="course === selectedCourse" type="button" (click)="onSelect(course)">
+          <span>{{course.dept}} {{course.num}}</span>
+        </button>
+      </li>
+    </ul>
+    <ul class="SU">
+      <h1>SUMMER 2023</h1>
+      <li *ngFor="let course of courses" >
+        <button *ngIf="course.year == 2023 && course.term == 'SU'" [class.selected]="course === selectedCourse" type="button" (click)="onSelect(course)">
+          <span>{{course.dept}} {{course.num}}</span>
+        </button>
+      </li>
+    </ul>
+    <ul class="AU">
+      <h1>AUTUMN 2023</h1>
+      <li *ngFor="let course of courses" >
+        <button *ngIf="course.year == 2023 && course.term == 'AU'" [class.selected]="course === selectedCourse" type="button" (click)="onSelect(course)">
+          <span>{{course.dept}} {{course.num}}</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="selectedCourse" class="detail">
+    <h1 class="detail">{{selectedCourse.dept | uppercase}} {{selectedCourse.num}}: </h1>
+    <h2>Software I: Software Components</h2>
+    <p>Intellectual foundations of software engineering; design-by-contract principles; mathematical modeling of software functionality; component-based software from client perspective; layered data representation</p>
+  </div>
+</div>

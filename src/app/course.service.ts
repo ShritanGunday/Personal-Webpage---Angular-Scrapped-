@@ -11,13 +11,11 @@ export class CourseService {
   constructor() { }
 
   getCourses(): Observable<Course[]> {
-    const heroes = of(COURSES);
-    return heroes;
+    const courses = of(COURSES);
+    return courses;
   }
 
-  getHero(dept: string, num: number): Observable<Course> {
-    // For now, assume that a hero with the specified `id` always exists.
-    // Error handling will be added in the next step of the tutorial.
+  getCourse(dept: string, num: number): Observable<Course> {
     const course = COURSES.find(h => h.dept === dept)!;
     return of(course);
   }

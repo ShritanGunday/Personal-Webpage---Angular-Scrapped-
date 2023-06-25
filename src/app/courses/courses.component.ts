@@ -26,4 +26,9 @@ export class CoursesComponent implements OnInit {
   onSelect(course: Course): void {
     this.selectedCourse = course;
   }
+
+  getInfo(course: Course) {
+    let info = '';
+    
+  }
 }

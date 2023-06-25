@@ -1,7 +1,27 @@
 import { Course } from './course';
 
 export const COURSES: Course[] = [
-  { dept: "CSE", num: 1223, term: "SU", year: 2021 },
+  { dept: "CSE", num: 1222, term: "SU", year: 2021 },
   { dept: "PUBHLTH", num: 2010, term: "SU", year: 2021 },
   { dept: "PHILOS", num: 1500, term: "SU", year: 2021 },
+  { dept: "PSYCH", num: 3312, term: "AU", year: 2021 },
+  { dept: "CLAS", num: 2000, term: "AU", year: 2021 },
+  { dept: "MICROBIO", num: 2000, term: "AU", year: 2021 },
+  { dept: "CSE", num: 1223, term: "SP", year: 2022 },
+  { dept: "CSE", num: 1224, term: "SP", year: 2022 },
+  { dept: "MATH", num: 1152, term: "SP", year: 2022 },
+  { dept: "CSE", num: 2221, term: "AU", year: 2022 },
+  { dept: "ENGR", num: 1100.15, term: "AU", year: 2022 },
+  { dept: "MATH", num: 2153, term: "AU", year: 2022 },
+  { dept: "ENGR", num: 2367, term: "AU", year: 2022 },
+  { dept: "ENGR", num: 1281.02, term: "AU", year: 2022 },
+  { dept: "CSE", num: 2231, term: "SP", year: 2023 },
+  { dept: "CSE", num: 2321, term: "SP", year: 2023 },
+  { dept: "STAT", num: 3470, term: "SP", year: 2023 },
+  { dept: "ARTEDUC", num: 1600, term: "SP", year: 2023 },
+  { dept: "ENGR", num: 1282.01, term: "SP", year: 2023 },
+  { dept: "CSE", num: 2421, term: "AU", year: 2023 },
+  { dept: "CSE", num: 2331, term: "AU", year: 2023 },
+  { dept: "MATH", num: 2568, term: "AU", year: 2023 },
+  { dept: "PHYSICS", num: 1250, term: "AU", year: 2023 },
 ];
