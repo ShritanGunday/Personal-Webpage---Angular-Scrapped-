@@ -1,0 +1,36 @@
+.backdrop{
+    background-color: rgb(75, 75, 75);
+}
+
+.picture{
+    position: relative;
+    width: 460px;
+    height: 500px;
+    left: 50px;
+    top: 50px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+.summary{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 60px;
+    left: 80px;
+    width: 430px;
+}
+
+.resume{
+    position: absolute;
+    width: 460px;
+    height: 595px;
+    left: 580px;
+    bottom: 88px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+.dummy{
+    color: rgb(75, 75, 75);
+    font-size: 18px;
+}
